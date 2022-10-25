@@ -16,3 +16,10 @@ fs.writeFile("names.txt", names, err => {
       console.error(err);
     }
   });
+
+  try {
+    console.log('El proceso a terminado satisfactoiamente')
+    
+  } catch (er) {
+    console.log(`error: ${er.messege}`)
+  }
